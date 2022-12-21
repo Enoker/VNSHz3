@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <script>
+        alert("Введите коэффициенты многочленов для квадратного уравнения Аx^2 + Bx + C = 0")
+        let a = Number(prompt("Введите коэффициент А из уравнения"))
+        let b = Number(prompt("Введите коэффициент B из уравнения"))
+        let c = Number(prompt("Введите коэффициент C из уравнения"))
+        let k = b*b-4*a*c
+        if (k > 0) {
+            alert("Корни квадратного уравнения:\n x1 = " + ((-b + Math.pow(k, 0.5)) /2*a) + "           " + "x2 = " + ((-b - Math.pow(k, 0.5)) /2*a))
+        }    
+        else {
+            if (k === 0) {
+                alert("x = " + ((-b + Math.pow(k, 0.5)) /2*a))
+            }
+            else { alert("Уравнение не являетя квадратным или не имеет корней") }
+        }
+    </script>
+    </body>
+</html>
